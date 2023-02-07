@@ -3,6 +3,7 @@ from app.models import *
 # Create your views here.
 from django.views.generic import View,ListView,DetailView,CreateView,UpdateView,DeleteView
 from django.urls import reverse_lazy
+
 class Home(View):
     def get(self,request):
         return render(request,'app/home.html')
